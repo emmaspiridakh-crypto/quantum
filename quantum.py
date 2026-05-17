@@ -25,42 +25,41 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 GUILD_ID = 1483104426037219371
 
 # ── ROLE IDs ──────────────────────────────────────────────────
-# OWNERSHIP = Founder + Owner + Co-Owner
-FOUNDER_ROLE_ID        =   1483104426465165421 # ← αλλαξε
-OWNER_ID               =   1483104426465165420  # ← αλλαξε
-CO_OWNER_ID            =   1483104426465165419 # ← αλλαξε
+FOUNDER_ROLE_ID        =   1483104426465165421
+OWNER_ID               =   1483104426465165420
+CO_OWNER_ID            =   1483104426465165419
 
 DEVELOPER_ID           =  1483104426431610981
 MANAGER_ID             =  1483104426456780880
 STAFF_ID               =  1483104426439737507
-CIVILIAN_MANAGER_ID    =  1504617395401134161  # ← αλλαξε με Civilian Manager role
-CRIMINAL_MANAGER_ID    =  1483104426456780875 # ← αλλαξε με Criminal Manager role
+CIVILIAN_MANAGER_ID    =  1504617395401134161
+CRIMINAL_MANAGER_ID    =  1483104426456780875
 DUTY_ROLE_ID           =  1483104426037219372
 AUTOROLE_ID            =  1483104426037219376
 DONATE_MANAGER_ID      =  1483104426465165416
 
 # ── CHANNEL IDs ───────────────────────────────────────────────
-POLICE_ROLE_ID               =  1483104426422964293 # ← αλλαξε με Police role (για accepted)
-EKAB_ROLE_ID                 =  1483104426422964291 # ← αλλαξε με ΕΚΑΒ role
-LIMENIKO_ROLE_ID             =  1504618618124767232 # ← αλλαξε με Λιμενικό role
-DIMARXIO_ROLE_ID             =  1483104426431610974  # ← αλλαξε με Δημαρχείο role
-STRATOS_ROLE_ID              =  1504618773561348188  # ← αλλαξε με Στρατός role
+POLICE_ROLE_ID               =  1483104426422964293
+EKAB_ROLE_ID                 =  1483104426422964291
+LIMENIKO_ROLE_ID             =  1504618618124767232
+DIMARXIO_ROLE_ID             =  1483104426431610974
+STRATOS_ROLE_ID              =  1504618773561348188
 STAFF_APP_ROLE_ID            =  1504618019488534651
 MANAGER_APP_ROLE_ID          =  1504618019488534651
 
-POLICE_RESULTS_CHANNEL_ID    =  1504583708735438868  # ← αλλαξε
-EKAB_RESULTS_CHANNEL_ID      =  1504583732437319711  # ← αλλαξε
-LIMENIKO_RESULTS_CHANNEL_ID  =  1504583961635196928  # ← αλλαξε
-DIMARXIO_RESULTS_CHANNEL_ID  =  1504583884006756415 # ← αλλαξε
-STRATOS_RESULTS_CHANNEL_ID   =  1504583844660248690  # ← αλλαξε
+POLICE_RESULTS_CHANNEL_ID    =  1504583708735438868
+EKAB_RESULTS_CHANNEL_ID      =  1504583732437319711
+LIMENIKO_RESULTS_CHANNEL_ID  =  1504583961635196928
+DIMARXIO_RESULTS_CHANNEL_ID  =  1504583884006756415
+STRATOS_RESULTS_CHANNEL_ID   =  1504583844660248690
 STAFF_RESULTS_CHANNEL_ID     =  1504583608688443584
 MANAGER_RESULTS_CHANNEL_ID   =  1504583635515212059
 
-POLICE_CATEGORY_ID           =  1504585636705865818 # ← αλλαξε
-EKAB_CATEGORY_ID             =  1504585636705865818 # ← αλλαξε
-LIMENIKO_CATEGORY_ID         =  1504585636705865818 # ← αλλαξε
-DIMARXIO_CATEGORY_ID         =  1504585636705865818 # ← αλλαξε
-STRATOS_CATEGORY_ID          =  1504585636705865818 # ← αλλαξε
+POLICE_CATEGORY_ID           =  1504585636705865818
+EKAB_CATEGORY_ID             =  1504585636705865818
+LIMENIKO_CATEGORY_ID         =  1504585636705865818
+DIMARXIO_CATEGORY_ID         =  1504585636705865818
+STRATOS_CATEGORY_ID          =  1504585636705865818
 STAFF_CATEGORY_ID            =  1504585636705865818
 MANAGER_CATEGORY_ID          =  1504585636705865818
 
@@ -86,6 +85,15 @@ ROLE_CREATE_LOG_CHANNEL_ID    = 1504583111986643045
 ROLE_DELETE_LOG_CHANNEL_ID    = 1504583111986643045
 TICKET_LOG_ID                 = 1504583434285224027
 
+# ── STAFF ALERT CHANNEL (tag staff όταν ανοίγει support ticket) ──
+# ← Άλλαξε με το ID του καναλιού που θες να γίνεται tag το staff
+STAFF_ALERT_CHANNEL_ID        = 1483104428692340907
+
+# ── DUTY VOICE CHANNELS (μέτρηση χρόνου αυτόματα) ────────────
+# ← Άλλαξε με τα IDs των 2 voice channels
+DUTY_VOICE_1_ID = 1483104427828314308
+DUTY_VOICE_2_ID = 1483104427828314309
+
 MEMBERS_CHANNEL_ID = 1504585073423290528
 BOTS_CHANNEL_ID    = 1504585203195056128
 ONLINE_CHANNEL_ID  = 1504585172694335608
@@ -93,13 +101,43 @@ BOOSTS_CHANNEL_ID  = 1504585237592674487
 
 APPLICATION_MANAGER_ROLES = [FOUNDER_ROLE_ID]
 
-THUMBNIAL_URL = "https://i.imgur.com/O2qQ0Qp.png" 
+THUMBNIAL_URL   = "https://i.imgur.com/O2qQ0Qp.png"
 BANNER_SUPPORT  = "https://i.imgur.com/BJiWiz8.jpeg"
 BANNER_JOB      = "https://i.imgur.com/BJiWiz8.jpeg"
 BANNER_APP      = "https://i.imgur.com/BJiWiz8.jpeg"
 BANNER_DONATE   = "https://i.imgur.com/BJiWiz8.jpeg"
 
-# ── QUESTIONS (θα τα συμπληρώσεις εσύ) ───────────────────────
+# ══════════════════════════════════════════════════════════════
+#  CUSTOM EMOJI — Βάλε εδώ τα custom emoji του server σου
+#  Μορφή: "<:emoji_name:emoji_id>"
+# ══════════════════════════════════════════════════════════════
+EMOJI_SUPPORT    = "<:EMOJI_NAME:1505583043489042494>"   # ← Ticket Panel
+EMOJI_BAN        = "<:EMOJI_NAME:1505162274183319552>"   # ← Ban Appeal
+EMOJI_REPORT     = "<:EMOJI_NAME:1505585303124181155>"   # ← Report
+EMOJI_BUG        = "<:EMOJI_NAME:1505161769897955398>"   # ← Bug Report
+EMOJI_OTHER      = "<:EMOJI_NAME:1505162431800807475>"   # ← Other
+EMOJI_CLIP       = "<:EMOJI_NAME:1505162242604269568>"   # ← Clip Permission
+EMOJI_ANTICHEAT  = "<:EMOJI_NAME:1505162454068625438>"   # ← Anticheat
+EMOJI_OWNERSHIP  = "<:EMOJI_NAME:1504849520033402890>"   # ← Ownership ticket
+
+EMOJI_CIVILIAN   = "<:EMOJI_NAME:1505585352100810772>"   # ← Job: Civilian
+EMOJI_CRIMINAL   = "<:EMOJI_NAME:1505585326360367228>"   # ← Job: Criminal
+
+EMOJI_POLICE     = "<:EMOJI_NAME:1505162327681404960>"   # ← Application: Police
+EMOJI_EKAB       = "<:EMOJI_NAME:1505162309209690114>"   # ← Application: ΕΚΑΒ
+EMOJI_LIMENIKO   = "<:EMOJI_NAME:1505162194537549924>"   # ← Application: Λιμενικό
+EMOJI_DIMARXIO   = "<:EMOJI_NAME:1505585352100810772>"   # ← Application: Δημαρχείο
+EMOJI_STRATOS    = "<:EMOJI_NAME:1505162177932300369>"   # ← Application: Στρατός
+EMOJI_STAFF      = "<:EMOJI_NAME:1505162242604269568>"   # ← Application: Staff
+EMOJI_MANAGER    = "<:EMOJI_NAME:1505161769897955398>"   # ← Application: Manager
+
+EMOJI_DONATE     = "<:EMOJI_NAME:1505161941402914846>"   # ← Donate button
+EMOJI_DUTY_ON    = "<:EMOJI_NAME:1505161517853839460>"   # ← On Duty button
+EMOJI_DUTY_OFF   = "<:EMOJI_NAME:1505161491458953226>"   # ← Off Duty button
+EMOJI_DUTY_LB    = "<:EMOJI_NAME:1504849629743812658>"   # ← Leaderboard button
+EMOJI_DUTY_ST    = "<:EMOJI_NAME:1505585303124181155>"   # ← Status button
+
+# ── QUESTIONS ─────────────────────────────────────────────────
 STAFF_QUESTIONS = [
     "Πόσο χρονών είσαι?","Πώς σε λένε στο roblox?","Πόσες ώρες θα μπορείς να είσαι on duty?",
     "Έχεις εμπειρία από staff? Αν ναι που?","Τι θα κάνεις αν φίλος σου κάνει abuse perms?",
@@ -115,23 +153,22 @@ MANAGER_QUESTIONS = [
     "Γνωρίζεις ότι σε ticket δεν απαντάς αν έχει ήδη απαντηθεί?",
     "Τι θα κάνεις αν υπάρχουν πολλά άτομα στο support?","Γιατί να επιλέξουμε εσένα?"
 ]
-# Αυτές θα τις βάλεις εσύ:
-POLICE_QUESTIONS   = ["Πόσο χρονών είσαι?","Πως σε λένε στο roblox?", "Ποια είναι η βασική αποστολή της Αστυνομίας μέσα στο RP και πώς την εφαρμόζεις στην πράξη?", 
+POLICE_QUESTIONS   = ["Πόσο χρονών είσαι?","Πως σε λένε στο roblox?", "Ποια είναι η βασική αποστολή της Αστυνομίας μέσα στο RP και πώς την εφαρμόζεις στην πράξη?",
 "Πώς διαχειρίζεσαι ένα περιστατικό όπου ο πολίτης δεν συνεργάζεται αλλά δεν παρανομεί?", "Πότε επιτρέπεται η χρήση θανατηφόρας βίας και ποια είναι η διαδικασία κλιμάκωσης?",
 "Πώς αντιδράς όταν άλλος αστυνομικός παραβιάζει πρωτόκολλο μπροστά σου?", "Πώς χειρίζεσαι καταγγελία πολίτη για κατάχρηση εξουσίας?",
-"Έχεις υπό κράτηση άτομο που κάνει FailRP. Ποια είναι η σωστή διαδικασία για να το χειριστείς?", "Ένας συνάδελφος κάνει RDM. Ποια είναι η άμεση ενέργειά σου? "]
+"Έχεις υπό κράτηση άτομο που κάνει FailRP. Ποια είναι η σωστή διαδικασία για να το χειριστείς?", "Ένας συνάδελφος κάνει RDM. Ποια είναι η άμεση ενέργειά σου?"]
 
-EKAB_QUESTIONS     = ["Πόσο χρονών είσαι?","Πως σε λένε στο roblox?", "Ποια είναι η βασική αποστολή του ΕΚΑΒ μέσα στο RP και πώς την εφαρμόζεις στην πράξη?", "Ποια είναι η προτεραιότητα ενός διασώστη σε σκηνή πολλαπλών τραυματιών?"
-, "Πώς αντιδράς όταν άλλος διασώστης παραβιάζει πρωτόκολλο μπροστά σου?", "Πώς χειρίζεσαι καταγγελία πολίτη για αμέλεια ή κακή συμπεριφορά?" "Έχεις υπό φροντίδα τραυματία που κάνει FailRP. Ποια είναι η σωστή διαδικασία για να το χειριστείς?",
+EKAB_QUESTIONS     = ["Πόσο χρονών είσαι?","Πως σε λένε στο roblox?", "Ποια είναι η βασική αποστολή του ΕΚΑΒ μέσα στο RP και πώς την εφαρμόζεις στην πράξη?", "Ποια είναι η προτεραιότητα ενός διασώστη σε σκηνή πολλαπλών τραυματιών?",
+"Πώς αντιδράς όταν άλλος διασώστης παραβιάζει πρωτόκολλο μπροστά σου?", "Πώς χειρίζεσαι καταγγελία πολίτη για αμέλεια ή κακή συμπεριφορά?", "Έχεις υπό φροντίδα τραυματία που κάνει FailRP. Ποια είναι η σωστή διαδικασία για να το χειριστείς?",
 "Πολίτης προσποιείται τραυματισμό για να αποφύγει σύλληψη. Πώς το χειρίζεσαι?", "Άλλος διασώστης κάνει powergaming σε revive. Ποια είναι η αντίδρασή σου?"]
 
 LIMENIKO_QUESTIONS = ["Πόσο χρονών είσαι?","Πως σε λένε στο roblox?", "Ποια είναι η κύρια αποστολή του Λιμενικού στο RP?", "Πώς διαχειρίζεσαι ύποπτο σκάφος που δεν υπακούει σε εντολές?",
-"Πότε επιτρέπεται η χρήση θαλάσσιας καταδίωξης?", "Μέλος του Λιμενικού κάνει κατάχρηση εξουσίας. Πώς το χειρίζεσαι",
+"Πότε επιτρέπεται η χρήση θαλάσσιας καταδίωξης?", "Μέλος του Λιμενικού κάνει κατάχρηση εξουσίας. Πώς το χειρίζεσαι?",
 "Έχεις υπό κράτηση άτομο που κάνει FailRP. Ποια είναι η σωστή διαδικασία για να το χειριστείς?", "Πολίτης προσποιείται τραυματισμό για να αποφύγει σύλληψη. Πώς το χειρίζεσαι?"]
 
 DIMARXIO_QUESTIONS = ["Πόσο χρονών είσαι?","Πως σε λένε στο roblox?", "Ποια είναι η ευθύνη ενός δημοτικού υπαλλήλου απέναντι στους πολίτες?",
 "Πώς διαχειρίζεσαι παράπονο πολίτη για κακή εξυπηρέτηση?", "Πώς αντιδράς όταν άλλος υπάλληλος παραβιάζει πρωτόκολλο μπροστά σου?",
-"Πολίτης ζητάει άδεια που δεν δικαιούται. Πώς το χειρίζεσαι?", "Υπάλληλος παρακάμπτει διαδικασίες για φίλο του. Ποια είναι η αντίδρασή σου?", 
+"Πολίτης ζητάει άδεια που δεν δικαιούται. Πώς το χειρίζεσαι?", "Υπάλληλος παρακάμπτει διαδικασίες για φίλο του. Ποια είναι η αντίδρασή σου?",
 "Κατά τη διάρκεια δημόσιας εκδήλωσης, δημιουργείται ένταση. Πώς την ελέγχεις?"]
 
 STRATOS_QUESTIONS  = ["Πόσο χρονών είσαι?","Πως σε λένε στο roblox?", "Ποια είναι η διαφορά μεταξύ στρατιωτικής και αστυνομικής αρμοδιότητας?",
@@ -145,7 +182,6 @@ def is_founder(u):
     return any(r.id == FOUNDER_ROLE_ID for r in u.roles)
 
 def is_ownership(u):
-    """Founder + Owner + Co-Owner"""
     return any(r.id in OWNERSHIP_IDS for r in u.roles)
 
 def is_owner_or_above(u):
@@ -205,6 +241,13 @@ async def on_guild_update(before, after):
         await update_voice_channels(after)
 
 # ══════════════════════════════════════════════════════════════
+#  DUTY VOICE TRACKING — αυτόματη μέτρηση χρόνου σε 2 voice channels
+# ══════════════════════════════════════════════════════════════
+DUTY_VOICE_CHANNELS = {DUTY_VOICE_1_ID, DUTY_VOICE_2_ID}
+# Αποθηκεύει {user_id: start_time} για voice-based duty
+voice_duty_sessions = {}
+
+# ══════════════════════════════════════════════════════════════
 #  LOGS
 # ══════════════════════════════════════════════════════════════
 @bot.event
@@ -212,6 +255,7 @@ async def on_voice_state_update(member, before, after):
     guild = member.guild
     log   = bot.get_channel(VOICE_LOG_CHANNEL_ID)
 
+    # ── Temp support channel creation ──
     if after.channel and after.channel.id == TEMP_VOICE_CHANNEL_ID:
         cat = guild.get_channel(TEMP_VOICE_CATEGORY_ID)
         tc  = await guild.create_voice_channel(name=f"{member.name}'s Support", category=cat)
@@ -224,7 +268,17 @@ async def on_voice_state_update(member, before, after):
             e.add_field(name="📁 Κανάλι",  value=f"**{tc.name}**", inline=True)
             e.set_footer(text=f"Quantum Roleplay • Voice Log | Channel ID: {tc.id}")
             await log.send(embed=e)
+        # ── Tag staff στο alert channel ──
+        alert_ch = guild.get_channel(STAFF_ALERT_CHANNEL_ID)
+        if alert_ch:
+            staff_role   = guild.get_role(STAFF_ID)
+            manager_role = guild.get_role(MANAGER_ID)
+            tags = " ".join(r.mention for r in [staff_role, manager_role] if r)
+            await alert_ch.send(
+                f"{tags}\n🎙️ {member.mention} μπήκε στο **Voice Support** και μεταφέρθηκε στο **{tc.name}**!"
+            )
 
+    # ── Temp channel deletion when empty ──
     if (before.channel and before.channel.category_id == TEMP_VOICE_CATEGORY_ID
             and before.channel.id != TEMP_VOICE_CHANNEL_ID
             and len(before.channel.members) == 0):
@@ -239,6 +293,49 @@ async def on_voice_state_update(member, before, after):
                 await log.send(embed=e)
         except: pass
 
+    # ── DUTY VOICE TRACKING ──
+    uid = str(member.id)
+    entered_duty_voice = after.channel and after.channel.id in DUTY_VOICE_CHANNELS
+    left_duty_voice    = before.channel and before.channel.id in DUTY_VOICE_CHANNELS
+
+    if entered_duty_voice and not left_duty_voice:
+        # Μπήκε σε duty voice channel
+        voice_duty_sessions[uid] = time.time()
+        duty_log = bot.get_channel(DUTY_LOG_CHANNEL_ID)
+        if duty_log:
+            e = discord.Embed(title="🎙️ Voice Duty Start", color=discord.Color.green(), timestamp=discord.utils.utcnow())
+            e.set_thumbnail(url=member.display_avatar.url)
+            e.add_field(name="👤 Χρήστης", value=f"{member.mention} (`{member.id}`)", inline=True)
+            e.add_field(name="🔊 Κανάλι",  value=f"**{after.channel.name}**", inline=True)
+            e.set_footer(text=f"Quantum Roleplay • Voice Duty Log | User ID: {member.id}")
+            await duty_log.send(embed=e)
+
+    elif left_duty_voice and not entered_duty_voice:
+        # Έφυγε από duty voice channel
+        if uid in voice_duty_sessions:
+            elapsed = time.time() - voice_duty_sessions.pop(uid)
+            # Προσθέτουμε τον χρόνο στο duty_data
+            if uid not in duty_data or not isinstance(duty_data[uid], dict):
+                duty_data[uid] = {"total_seconds": 0.0}
+            duty_data[uid]["total_seconds"] = duty_data[uid].get("total_seconds", 0.0) + elapsed
+            save_duty_data(duty_data)
+
+            h, rem = divmod(int(elapsed), 3600); m2, s2 = divmod(rem, 60)
+            total = duty_data[uid].get("total_seconds", 0.0)
+            th, tr = divmod(int(total), 3600); tm2, _ = divmod(tr, 60)
+
+            duty_log = bot.get_channel(DUTY_LOG_CHANNEL_ID)
+            if duty_log:
+                e = discord.Embed(title="🎙️ Voice Duty End", color=discord.Color.red(), timestamp=discord.utils.utcnow())
+                e.set_thumbnail(url=member.display_avatar.url)
+                e.add_field(name="👤 Χρήστης", value=f"{member.mention} (`{member.id}`)", inline=True)
+                e.add_field(name="🔇 Κανάλι",  value=f"**{before.channel.name}**", inline=True)
+                e.add_field(name="⏱ Session",  value=f"{h}ω {m2}λ {s2}δ", inline=True)
+                e.add_field(name="📊 Σύνολο",  value=f"{th}ω {tm2}λ", inline=True)
+                e.set_footer(text=f"Quantum Roleplay • Voice Duty Log | User ID: {member.id}")
+                await duty_log.send(embed=e)
+
+    # ── General voice logs ──
     if not log: return
     if not before.channel and after.channel:
         e = discord.Embed(title="🔊 Voice Join", color=discord.Color.green(), timestamp=discord.utils.utcnow())
@@ -326,6 +423,17 @@ async def on_member_update(before, after):
 
 @bot.event
 async def on_guild_channel_create(channel):
+    # ΔΕΝ κάνουμε log αν είναι ticket/application channel (δημιουργούνται αυτόματα)
+    skip_categories = {
+        MAIN_TICKET_CATEGORY_ID, JOB_TICKET_CATEGORY_ID,
+        DONATE_TICKET_CATEGORY_ID, TEMP_VOICE_CATEGORY_ID,
+        POLICE_CATEGORY_ID, EKAB_CATEGORY_ID, LIMENIKO_CATEGORY_ID,
+        DIMARXIO_CATEGORY_ID, STRATOS_CATEGORY_ID,
+        STAFF_CATEGORY_ID, MANAGER_CATEGORY_ID
+    }
+    if hasattr(channel, "category_id") and channel.category_id in skip_categories:
+        return
+
     log = bot.get_channel(CHANNEL_CREATE_LOG_CHANNEL_ID)
     if not log: return
     moderator = "Άγνωστος"
@@ -391,36 +499,33 @@ async def on_message_delete(message):
     await log.send(embed=e)
 
 # ══════════════════════════════════════════════════════════════
-#  TICKET SYSTEM — Support (dropdown) με 8 κατηγορίες
-#  Το ticket ΔΕΝ μπορεί να κλείσει ο δημιουργός
+#  TICKET SYSTEM
 # ══════════════════════════════════════════════════════════════
 class TicketCloseView(discord.ui.View):
     def __init__(self, creator_id: int):
         super().__init__(timeout=None)
         self.creator_id = creator_id
-        # Αποθηκευουμε το creator_id στο custom_id για persistence μετα απο restart
         self.close_btn.custom_id = f"close_ticket_{creator_id}"
 
     @discord.ui.button(label="🔒 Close Ticket", style=discord.ButtonStyle.red, custom_id="close_ticket_placeholder")
     async def close_btn(self, interaction: discord.Interaction, button: discord.ui.Button):
-        # Εξαγωγη creator_id απο το custom_id
         try:
             cid = int(self.close_btn.custom_id.split("_")[-1])
         except:
             cid = self.creator_id
 
-        # Ο δημιουργος ΔΕΝ μπορει να κλεισει το ticket
         if interaction.user.id == cid and not is_staff_or_manager(interaction.user):
             return await interaction.response.send_message(
                 "❌ Δεν μπορείς να κλείσεις το δικό σου ticket. Επικοινώνησε με staff.",
                 ephemeral=True
             )
+        # Στέλνουμε ΜΟΝΟ το ticket close log, όχι channel delete log
         lc = interaction.guild.get_channel(TICKET_LOG_ID)
         if lc:
             e = discord.Embed(title="❌ Ticket Closed", color=discord.Color.red(), timestamp=discord.utils.utcnow())
             e.set_thumbnail(url=interaction.user.display_avatar.url)
             e.add_field(name="🔒 Έκλεισε από", value=interaction.user.mention, inline=True)
-            e.add_field(name="📁 Κανάλι",       value=interaction.channel.mention, inline=True)
+            e.add_field(name="📁 Κανάλι",       value=interaction.channel.name, inline=True)
             e.set_footer(text="Quantum Roleplay • Ticket Log")
             await lc.send(embed=e)
         await interaction.response.send_message("Κλείνει σε 4 δευτερόλεπτα...")
@@ -429,19 +534,29 @@ class TicketCloseView(discord.ui.View):
         except: pass
 
 def make_ticket_close_view(creator_id: int) -> TicketCloseView:
-    v = TicketCloseView(creator_id)
-    return v
+    return TicketCloseView(creator_id)
+
+# ── Helper: tag staff σε alert channel όταν ανοίγει support ticket ──
+async def alert_staff_new_ticket(guild, author, channel, ticket_type: str):
+    alert_ch = guild.get_channel(STAFF_ALERT_CHANNEL_ID)
+    if not alert_ch: return
+    staff_role  = guild.get_role(STAFF_ID)
+    manager_role = guild.get_role(MANAGER_ID)
+    tags = " ".join(r.mention for r in [staff_role, manager_role] if r)
+    await alert_ch.send(
+        f"{tags}\n📩 Νέο **{ticket_type}** ticket από {author.mention} → {channel.mention}"
+    )
 
 class SupportTicketSelect(discord.ui.Select):
     def __init__(self):
         opts = [
-            discord.SelectOption(label="Ownership",       description="Επικοινωνία με Ownership",        emoji="👑", value="ownership"),
-            discord.SelectOption(label="Ban Appeal",      description="Αίτηση άρσης ban",                emoji="🔓", value="ban_appeal"),
-            discord.SelectOption(label="Report",          description="Αναφορά ατόμου ή συμβάντος",      emoji="📙", value="report"),
-            discord.SelectOption(label="Bug Report",      description="Αναφορά bug",                     emoji="🐞", value="bug_report"),
-            discord.SelectOption(label="Other",           description="Άλλο θέμα",                       emoji="💬", value="other"),
-            discord.SelectOption(label="Clip Permission", description="Αίτηση άδειας clip",              emoji="🎬", value="clip_perm"),
-            discord.SelectOption(label="Anticheat",       description="Θέμα anticheat",                  emoji="🛡️", value="anticheat"),
+            discord.SelectOption(label="Ownership",       description="Επικοινωνία με Ownership",      emoji=EMOJI_OWNERSHIP,  value="ownership"),
+            discord.SelectOption(label="Ban Appeal",      description="Αίτηση άρσης ban",              emoji=EMOJI_BAN,        value="ban_appeal"),
+            discord.SelectOption(label="Report",          description="Αναφορά ατόμου ή συμβάντος",    emoji=EMOJI_REPORT,     value="report"),
+            discord.SelectOption(label="Bug Report",      description="Αναφορά bug",                   emoji=EMOJI_BUG,        value="bug_report"),
+            discord.SelectOption(label="Other",           description="Άλλο θέμα",                     emoji=EMOJI_OTHER,      value="other"),
+            discord.SelectOption(label="Clip Permission", description="Αίτηση άδειας clip",            emoji=EMOJI_CLIP,       value="clip_perm"),
+            discord.SelectOption(label="Anticheat",       description="Θέμα anticheat",                emoji=EMOJI_ANTICHEAT,  value="anticheat"),
         ]
         super().__init__(custom_id="support_ticket_select", placeholder="Επίλεξε κατηγορία...", min_values=1, max_values=1, options=opts)
 
@@ -451,9 +566,9 @@ class SupportTicketSelect(discord.ui.Select):
         if not cat: return await interaction.response.send_message("Κατηγορία δεν βρέθηκε.", ephemeral=True)
 
         v = self.values[0]
-        ownership_roles = [FOUNDER_ROLE_ID, OWNER_ID, CO_OWNER_ID]
+        ownership_roles     = [FOUNDER_ROLE_ID, OWNER_ID, CO_OWNER_ID]
         donate_and_ownership = [FOUNDER_ROLE_ID, OWNER_ID, CO_OWNER_ID, DONATE_MANAGER_ID]
-        dev_and_ownership = [FOUNDER_ROLE_ID, OWNER_ID, CO_OWNER_ID, DEVELOPER_ID]
+        dev_and_ownership   = [FOUNDER_ROLE_ID, OWNER_ID, CO_OWNER_ID, DEVELOPER_ID]
         staff_man_ownership = [FOUNDER_ROLE_ID, OWNER_ID, CO_OWNER_ID, MANAGER_ID, STAFF_ID]
 
         cfg = {
@@ -462,11 +577,11 @@ class SupportTicketSelect(discord.ui.Select):
             "report":     (ownership_roles,          f"report-{author.name}",      "Report"),
             "bug_report": (dev_and_ownership,        f"bug-{author.name}",         "Bug Report"),
             "other":      (staff_man_ownership,      f"other-{author.name}",       "Other"),
-            "clip_perm":  ([FOUNDER_ROLE_ID,OWNER_ID,CO_OWNER_ID,MANAGER_ID], f"clip-{author.name}", "Clip Permission"),
+            "clip_perm":  ([FOUNDER_ROLE_ID, OWNER_ID, CO_OWNER_ID, MANAGER_ID], f"clip-{author.name}", "Clip Permission"),
             "anticheat":  (donate_and_ownership,     f"anticheat-{author.name}",   "Anticheat"),
         }
         rids, base_name, tt = cfg[v]
-        name = base_name.replace(" ","-").lower()[:80]
+        name = base_name.replace(" ", "-").lower()[:80]
 
         ow = {guild.default_role: discord.PermissionOverwrite(view_channel=False),
               author: discord.PermissionOverwrite(view_channel=True, send_messages=True, read_message_history=True)}
@@ -475,13 +590,15 @@ class SupportTicketSelect(discord.ui.Select):
             if r: ow[r] = discord.PermissionOverwrite(view_channel=True, send_messages=True, read_message_history=True)
 
         ch = await guild.create_text_channel(name=name, category=cat, overwrites=ow)
+
         e = discord.Embed(title=f"🎫 {tt}",
             description=f"Γεια σου {author.mention}!\n\n**Η ομάδα θα σε εξυπηρετήσει σύντομα.**\nΠαρακαλώ περίγραψε το αίτημά σου.\n\n*One active ticket at a time.*",
-            color=discord.Color.from_rgb(20,20,40))
-        e.set_image(url=BANNER_SUPPORT);
+            color=discord.Color.from_rgb(20, 20, 40))
+        e.set_image(url=BANNER_SUPPORT)
         e.set_footer(text="Quantum Roleplay • Support System")
         await ch.send(embed=e, view=make_ticket_close_view(author.id))
 
+        # Log ΜΟΝΟ στο ticket log channel — ΟΧΙ channel creation log
         lc = guild.get_channel(TICKET_LOG_ID)
         if lc:
             le = discord.Embed(title="📂 Νέο Ticket", color=discord.Color.blue(), timestamp=discord.utils.utcnow())
@@ -491,20 +608,24 @@ class SupportTicketSelect(discord.ui.Select):
             le.add_field(name="📁 Κανάλι",value=ch.mention,     inline=True)
             le.set_footer(text="Quantum Roleplay • Ticket Log")
             await lc.send(embed=le)
+
+        # Tag staff στο alert channel
+        await alert_staff_new_ticket(guild, author, ch, tt)
+
         await interaction.response.send_message(f"Δημιουργήθηκε: {ch.mention}", ephemeral=True)
 
 class SupportTicketPanel(discord.ui.View):
     def __init__(self): super().__init__(timeout=None); self.add_item(SupportTicketSelect())
 
-# ── JOB TICKET — κουμπιά (Civilian / Criminal) ───────────────
+# ── JOB TICKET ────────────────────────────────────────────────
 class JobTicketView(discord.ui.View):
     def __init__(self): super().__init__(timeout=None)
 
-    @discord.ui.button(label="👮 Civilian", style=discord.ButtonStyle.blurple, custom_id="job_civilian")
+    @discord.ui.button(label="Civilian", style=discord.ButtonStyle.blurple, custom_id="job_civilian", emoji=EMOJI_CIVILIAN)
     async def civilian(self, interaction: discord.Interaction, button: discord.ui.Button):
         await self._create_job_ticket(interaction, "Civilian Job", CIVILIAN_MANAGER_ID)
 
-    @discord.ui.button(label="🕵️ Criminal", style=discord.ButtonStyle.grey, custom_id="job_criminal")
+    @discord.ui.button(label="Criminal", style=discord.ButtonStyle.grey, custom_id="job_criminal", emoji=EMOJI_CRIMINAL)
     async def criminal(self, interaction: discord.Interaction, button: discord.ui.Button):
         await self._create_job_ticket(interaction, "Criminal Job", CRIMINAL_MANAGER_ID)
 
@@ -513,7 +634,7 @@ class JobTicketView(discord.ui.View):
         cat   = guild.get_channel(JOB_TICKET_CATEGORY_ID)
         if not cat: return await interaction.response.send_message("Κατηγορία δεν βρέθηκε.", ephemeral=True)
         prefix = "civilian" if "Civilian" in tt else "criminal"
-        name   = f"{prefix}-{author.name}".replace(" ","-").lower()[:80]
+        name   = f"{prefix}-{author.name}".replace(" ", "-").lower()[:80]
         ow = {guild.default_role: discord.PermissionOverwrite(view_channel=False),
               author: discord.PermissionOverwrite(view_channel=True, send_messages=True, read_message_history=True)}
         for rid in [manager_rid, FOUNDER_ROLE_ID, OWNER_ID, CO_OWNER_ID]:
@@ -522,7 +643,7 @@ class JobTicketView(discord.ui.View):
         ch = await guild.create_text_channel(name=name, category=cat, overwrites=ow)
         e = discord.Embed(title=f"🎫 {tt}",
             description=f"Γεια σου {author.mention}!\n\n**Ο Job Manager θα σε εξυπηρετήσει σύντομα.**\n\n*One active ticket at a time.*",
-            color=discord.Color.from_rgb(20,20,40))
+            color=discord.Color.from_rgb(20, 20, 40))
         e.set_image(url=BANNER_JOB)
         e.set_footer(text="Quantum Roleplay • Job System")
         await ch.send(embed=e, view=make_ticket_close_view(author.id))
@@ -537,16 +658,16 @@ class JobTicketView(discord.ui.View):
             await lc.send(embed=le)
         await interaction.response.send_message(f"Δημιουργήθηκε: {ch.mention}", ephemeral=True)
 
-# ── DONATE TICKET — κουμπί, μόνο Donate Manager ──────────────
+# ── DONATE TICKET ─────────────────────────────────────────────
 class DonateTicketView(discord.ui.View):
     def __init__(self): super().__init__(timeout=None)
 
-    @discord.ui.button(label="💎 Make a Donate", style=discord.ButtonStyle.green, custom_id="donate_ticket_btn")
+    @discord.ui.button(label="Make a Donate", style=discord.ButtonStyle.green, custom_id="donate_ticket_btn", emoji=EMOJI_DONATE)
     async def donate(self, interaction: discord.Interaction, button: discord.ui.Button):
         guild = interaction.guild; author = interaction.user
         cat   = guild.get_channel(DONATE_TICKET_CATEGORY_ID)
         if not cat: return await interaction.response.send_message("Κατηγορία δεν βρέθηκε.", ephemeral=True)
-        name  = f"donate-{author.name}".replace(" ","-").lower()[:80]
+        name  = f"donate-{author.name}".replace(" ", "-").lower()[:80]
         ow = {guild.default_role: discord.PermissionOverwrite(view_channel=False),
               author: discord.PermissionOverwrite(view_channel=True, send_messages=True, read_message_history=True)}
         for rid in [DONATE_MANAGER_ID, FOUNDER_ROLE_ID, OWNER_ID, CO_OWNER_ID]:
@@ -574,7 +695,6 @@ class DonateTicketView(discord.ui.View):
 
 # ══════════════════════════════════════════════════════════════
 #  APPLICATION SYSTEM
-#  Κατηγορίες: Police, ΕΚΑΒ, Λιμενικό, Δημαρχείο, Στρατός, Staff, Manager
 # ══════════════════════════════════════════════════════════════
 active_application_sessions = {}
 
@@ -613,13 +733,13 @@ class ReasonModal(discord.ui.Modal):
                     except: pass
             if target:
                 try:
-                    dm=discord.Embed(title=f"✅ Η Αίτηση έγινε δεκτή!", description=f"**Reason:** {reason}", color=discord.Color.green())
+                    dm=discord.Embed(title="✅ Η Αίτηση έγινε δεκτή!", description=f"**Reason:** {reason}", color=discord.Color.green())
                     await target.send(embed=dm)
                 except: pass
         else:
             if target:
                 try:
-                    dm=discord.Embed(title=f"❌ Η Αίτηση απορρίφθηκε.", description=f"**Reason:** {reason}", color=discord.Color.red())
+                    dm=discord.Embed(title="❌ Η Αίτηση απορρίφθηκε.", description=f"**Reason:** {reason}", color=discord.Color.red())
                     await target.send(embed=dm)
                 except: pass
                 await asyncio.sleep(2)
@@ -652,7 +772,7 @@ class StartApplicationView(discord.ui.View):
     @discord.ui.button(label="▶️ Start", style=discord.ButtonStyle.blurple, custom_id="start_app_placeholder")
     async def start_btn(self, interaction, button):
         if self.app_type in locked_applications:
-            return await interaction.response.send_message(f"🔒 Αυτές οι αιτήσεις είναι κλειστές.", ephemeral=True)
+            return await interaction.response.send_message("🔒 Αυτές οι αιτήσεις είναι κλειστές.", ephemeral=True)
         cid = interaction.channel.id
         if cid in active_application_sessions:
             return await interaction.response.send_message("Αίτηση σε εξέλιξη.", ephemeral=True)
@@ -705,28 +825,28 @@ async def handle_application_message(message):
 class ApplicationSelect(discord.ui.Select):
     def __init__(self):
         opts = [
-            discord.SelectOption(label="🚓 Police",       description="Αίτηση για Police",      emoji="🚓", value="police"),
-            discord.SelectOption(label="🚑 ΕΚΑΒ",         description="Αίτηση για ΕΚΑΒ",        emoji="🚑", value="ekab"),
-            discord.SelectOption(label="⚓ Λιμενικό",     description="Αίτηση για Λιμενικό",    emoji="⚓", value="limeniko"),
-            discord.SelectOption(label="🏛️ Δημαρχείο",    description="Αίτηση για Δημαρχείο",   emoji="🏛️", value="dimarxio"),
-            discord.SelectOption(label="⚔️ Στρατός",      description="Αίτηση για Στρατός",     emoji="⚔️", value="stratos"),
-            discord.SelectOption(label="👮 Staff",         description="Αίτηση για Staff",       emoji="👮", value="staff"),
-            discord.SelectOption(label="👔 Manager",       description="Αίτηση για Manager",     emoji="👔", value="manager"),
+            discord.SelectOption(label="ΕΛΑΣ",     description="Αίτηση για ΕΛΑΣ",    emoji=EMOJI_POLICE,    value="Ε.Λ.Α.Σ"),
+            discord.SelectOption(label="ΕΚΑΒ",       description="Αίτηση για ΕΚΑΒ",      emoji=EMOJI_EKAB,      value="Ε.Κ.Α.Β"),
+            discord.SelectOption(label="Λιμενικό",   description="Αίτηση για Λιμενικό",  emoji=EMOJI_LIMENIKO,  value="Λιμενικό"),
+            discord.SelectOption(label="Δημαρχείο",  description="Αίτηση για Δημαρχείο", emoji=EMOJI_DIMARXIO,  value="Δημαρχείο"),
+            discord.SelectOption(label="Στρατός",    description="Αίτηση για Στρατός",   emoji=EMOJI_STRATOS,   value="Στρατός"),
+            discord.SelectOption(label="Staff",      description="Αίτηση για Staff",     emoji=EMOJI_STAFF,     value="Staff"),
+            discord.SelectOption(label="Manager",    description="Αίτηση για Manager",   emoji=EMOJI_MANAGER,   value="Manager"),
         ]
         super().__init__(custom_id="unified_application_select", placeholder="📂 Επίλεξε τύπο αίτησης...", min_values=1, max_values=1, options=opts)
 
     async def callback(self, interaction: discord.Interaction):
         app = self.values[0]
         if app in locked_applications:
-            return await interaction.response.send_message(f"🔒 Αυτές οι αιτήσεις είναι κλειστές.", ephemeral=True)
+            return await interaction.response.send_message("🔒 Αυτές οι αιτήσεις είναι κλειστές.", ephemeral=True)
         guild=interaction.guild; author=interaction.user
 
         cat_map = {
-            "police":POLICE_CATEGORY_ID,"ekab":EKAB_CATEGORY_ID,"limeniko":LIMENIKO_CATEGORY_ID,
-            "dimarxio":DIMARXIO_CATEGORY_ID,"stratos":STRATOS_CATEGORY_ID,
-            "staff":STAFF_CATEGORY_ID,"manager":MANAGER_CATEGORY_ID
+            "Ε.Λ.Α.Σ":POLICE_CATEGORY_ID,"Ε.Κ.Α.Β":EKAB_CATEGORY_ID,"Λιμενικό":LIMENIKO_CATEGORY_ID,
+            "Δημαρχείο":DIMARXIO_CATEGORY_ID,"Στρατός":STRATOS_CATEGORY_ID,
+            "Staff":STAFF_CATEGORY_ID,"Manager":MANAGER_CATEGORY_ID
         }
-        label_map = {"police":"police","ekab":"ekab","limeniko":"limeniko","dimarxio":"dimarxio","stratos":"stratos","staff":"staff","manager":"manager"}
+        label_map = {"Ε.Λ.Α.Σ":"Ε.Λ.Α.Σ","Ε.Κ.Α.Β":"Ε.Κ.Α.Β","Λιμενικό":"Λιμενικό","Δημαρχείο":"Δημαρχείο","Στρατός":"Στρατός","Staff":"Staff","Manager":"Manager"}
         cat = guild.get_channel(cat_map.get(app, 0))
         cname = f"{label_map[app]}-{author.name}".replace(" ","-").lower()[:80]
         ex = discord.utils.get(guild.text_channels, name=cname)
@@ -739,8 +859,11 @@ class ApplicationSelect(discord.ui.Select):
             if r: ow[r] = discord.PermissionOverwrite(view_channel=True, send_messages=True, read_message_history=True)
 
         ch = await guild.create_text_channel(name=cname, category=cat, overwrites=ow)
-        title_map = {"police":"🚓 Police Application","ekab":"🚑 ΕΚΑΒ Application","limeniko":"⚓ Λιμενικό Application",
-                     "dimarxio":"🏛️ Δημαρχείο Application","stratos":"⚔️ Στρατός Application","staff":"👮 Staff Application","manager":"👔 Manager Application"}
+        title_map = {
+            "Ε.Λ.Α.Σ":"🚓 Police Application","Ε.Κ.Α.Β":"🚑 ΕΚΑΒ Application","Λιμενικό":"⚓ Λιμενικό Application",
+            "Δημαρχείο":"🏛️ Δημαρχείο Application","Στρατός":"⚔️ Στρατός Application",
+            "Staff":"👮 Staff Application","Manager":"👔 Manager Application"
+        }
         e = discord.Embed(title=title_map.get(app,"Application"),
             description=f"{author.mention}, πάτα το κουμπί παρακάτω για να ξεκινήσεις την αίτησή σου.",
             color=discord.Color.blurple())
@@ -753,90 +876,47 @@ class UnifiedApplicationPanel(discord.ui.View):
     def __init__(self): super().__init__(timeout=None); self.add_item(ApplicationSelect())
 
 # ══════════════════════════════════════════════════════════════
-#  DUTY SYSTEM — persistent
+#  DUTY SYSTEM — μόνο Status + Leaderboard (χωρίς On/Off Duty buttons)
 # ══════════════════════════════════════════════════════════════
 def get_total_seconds(uid: str, now: float) -> float:
     d = duty_data.get(uid, {})
     if not isinstance(d, dict): return 0.0
     total = d.get("total_seconds", 0.0)
-    if "start_time" in d: total += now - d["start_time"]
+    # Προσθέτουμε active voice session αν υπάρχει
+    if uid in voice_duty_sessions:
+        total += now - voice_duty_sessions[uid]
     return total
 
 class DutyView(discord.ui.View):
     def __init__(self): super().__init__(timeout=None)
 
-    @discord.ui.button(label="🟢 On Duty", style=discord.ButtonStyle.green, custom_id="duty_on", row=0)
-    async def on_duty(self, interaction, button):
-        uid=str(interaction.user.id); dr=interaction.guild.get_role(DUTY_ROLE_ID)
-        if dr in interaction.user.roles: return await interaction.response.send_message("Είσαι ήδη On Duty!", ephemeral=True)
-        if dr:
-            try: await interaction.user.add_roles(dr)
-            except: pass
-        if uid not in duty_data or not isinstance(duty_data[uid], dict):
-            duty_data[uid] = {"total_seconds": 0.0}
-        duty_data[uid]["start_time"] = time.time()
-        save_duty_data(duty_data)
-        log = bot.get_channel(DUTY_LOG_CHANNEL_ID)
-        if log:
-            e = discord.Embed(title="🟢 On Duty", description=f"{interaction.user.mention} μπήκε On Duty.", color=discord.Color.green(), timestamp=discord.utils.utcnow())
-            e.set_thumbnail(url=interaction.user.display_avatar.url)
-            e.set_footer(text=f"Quantum Roleplay • Duty Log | User ID: {interaction.user.id}")
-            await log.send(embed=e)
-        await interaction.response.send_message("✅ Είσαι On Duty!", ephemeral=True)
-
-    @discord.ui.button(label="🔴 Off Duty", style=discord.ButtonStyle.red, custom_id="duty_off", row=0)
-    async def off_duty(self, interaction, button):
-        uid=str(interaction.user.id); dr=interaction.guild.get_role(DUTY_ROLE_ID)
-        if dr not in interaction.user.roles: return await interaction.response.send_message("Δεν είσαι On Duty!", ephemeral=True)
-        if dr:
-            try: await interaction.user.remove_roles(dr)
-            except: pass
-        ss = 0.0
-        if uid in duty_data and isinstance(duty_data[uid], dict) and "start_time" in duty_data[uid]:
-            ss = time.time() - duty_data[uid]["start_time"]
-            duty_data[uid]["total_seconds"] = duty_data[uid].get("total_seconds", 0.0) + ss
-            duty_data[uid].pop("start_time", None)
-            save_duty_data(duty_data)
-        h,r=divmod(int(ss),3600); m,s2=divmod(r,60); ds=f"{h}ω {m}λ {s2}δ"
-        total = duty_data.get(uid,{}).get("total_seconds",0.0)
-        th,tr=divmod(int(total),3600); tm2,_=divmod(tr,60)
-        log = bot.get_channel(DUTY_LOG_CHANNEL_ID)
-        if log:
-            e = discord.Embed(title="🔴 Off Duty", description=f"{interaction.user.mention} βγήκε Off Duty.", color=discord.Color.red(), timestamp=discord.utils.utcnow())
-            e.set_thumbnail(url=interaction.user.display_avatar.url)
-            e.add_field(name="⏱ Session", value=ds, inline=True)
-            e.add_field(name="📊 Σύνολο", value=f"{th}ω {tm2}λ", inline=True)
-            e.set_footer(text=f"Quantum Roleplay • Duty Log | User ID: {interaction.user.id}")
-            await log.send(embed=e)
-        await interaction.response.send_message(f"✅ Off Duty! Session: **{ds}** | Σύνολο: **{th}ω {tm2}λ**", ephemeral=True)
-
-    @discord.ui.button(label="📋 Duty Status", style=discord.ButtonStyle.blurple, custom_id="duty_status", row=1)
+    @discord.ui.button(label="Status", style=discord.ButtonStyle.blurple, custom_id="duty_status", emoji=EMOJI_DUTY_ST, row=0)
     async def duty_status(self, interaction, button):
-        guild=interaction.guild; dr=guild.get_role(DUTY_ROLE_ID); now=time.time()
-        on_duty_members=[]
-        if dr:
-            for m in guild.members:
-                if dr in m.roles and not m.bot:
-                    uid=str(m.id)
-                    if uid in duty_data and "start_time" in duty_data[uid]:
-                        elapsed=now-duty_data[uid]["start_time"]
+        guild=interaction.guild; now=time.time()
+        # Βρίσκουμε όσους είναι τώρα σε duty voice channels
+        active_in_voice = []
+        for ch_id in DUTY_VOICE_CHANNELS:
+            ch = guild.get_channel(ch_id)
+            if ch:
+                for m in ch.members:
+                    if not m.bot:
+                        uid = str(m.id)
+                        elapsed = now - voice_duty_sessions.get(uid, now)
                         h,rem=divmod(int(elapsed),3600); mn,sc=divmod(rem,60)
-                        on_duty_members.append((m,f"{h}ω {mn}λ {sc}δ"))
-                    else:
-                        on_duty_members.append((m,"0ω 0λ 0δ"))
+                        active_in_voice.append((m, f"{h}ω {mn}λ {sc}δ", ch.name))
         e = discord.Embed(title="📋 Duty Status", color=discord.Color.blurple(), timestamp=discord.utils.utcnow())
-        if on_duty_members:
-            e.description = "\n".join(f"🟢 {m.mention} — `{dur}`" for m,dur in on_duty_members)
-            e.set_footer(text=f"{len(on_duty_members)} άτομα on duty | Quantum Roleplay")
+        if active_in_voice:
+            e.description = "\n".join(f"🟢 {m.mention} — `{dur}` στο **{ch}**" for m,dur,ch in active_in_voice)
+            e.set_footer(text=f"{len(active_in_voice)} άτομα on duty | Quantum Roleplay")
         else:
             e.description = "❌ Κανένας δεν είναι On Duty αυτή τη στιγμή."
             e.set_footer(text="Quantum Roleplay • Duty Status")
         await interaction.response.send_message(embed=e, ephemeral=True)
 
-    @discord.ui.button(label="🏆 Leaderboard", style=discord.ButtonStyle.grey, custom_id="duty_leaderboard_btn", row=1)
+    @discord.ui.button(label="Leaderboard", style=discord.ButtonStyle.grey, custom_id="duty_leaderboard_btn", emoji=EMOJI_DUTY_LB, row=0)
     async def leaderboard_btn(self, interaction, button):
         guild=interaction.guild; now=time.time()
-        totals=[(uid,get_total_seconds(uid,now)) for uid,d in duty_data.items() if isinstance(d,dict) and get_total_seconds(uid,now)>0]
+        totals=[(uid, get_total_seconds(uid, now)) for uid,d in duty_data.items() if isinstance(d,dict) and get_total_seconds(uid,now)>0]
         totals.sort(key=lambda x:x[1], reverse=True)
         medals=["🥇","🥈","🥉"]
         e = discord.Embed(title="🏆 Duty Leaderboard", color=discord.Color.gold(), timestamp=discord.utils.utcnow())
@@ -845,15 +925,14 @@ class DutyView(discord.ui.View):
             member=guild.get_member(int(uid)); name=member.display_name if member else f"User {uid}"
             h,rem=divmod(int(secs),3600); mn,_=divmod(rem,60)
             medal=medals[i] if i<3 else f"**#{i+1}**"
-            dr=guild.get_role(DUTY_ROLE_ID)
-            is_on=" 🟢" if (member and dr and dr in member.roles) else ""
+            is_on=" 🟢" if uid in voice_duty_sessions else ""
             desc+=f"{medal} {name}{is_on} — `{h}ω {mn}λ`\n"
         e.description = desc or "Κανένας δεν έχει κάνει duty ακόμα."
         e.set_footer(text="🟢 = Τώρα on duty • Δεν επαναφέρονται ποτέ | Quantum Roleplay")
         await interaction.response.send_message(embed=e, ephemeral=True)
 
 # ══════════════════════════════════════════════════════════════
-#  ON MESSAGE (anti-spam, anti-link, token)
+#  ON MESSAGE
 # ══════════════════════════════════════════════════════════════
 spam_tracker = {}
 URL_PATTERN   = re.compile(r"(https?://|www\.)\S+|discord\.gg/\S+", re.IGNORECASE)
@@ -917,7 +996,7 @@ async def on_message(message):
     if not handled: await bot.process_commands(message)
 
 # ══════════════════════════════════════════════════════════════
-#  ON MEMBER JOIN
+#  ON MEMBER JOIN / LEAVE / BAN
 # ══════════════════════════════════════════════════════════════
 ban_kick_tracker = {}
 
@@ -990,13 +1069,11 @@ async def on_member_join(member):
             await log.send(embed=e)
         if ALT_AUTO_KICK: return
 
-    # AUTOROLE
     r=guild.get_role(AUTOROLE_ID)
     if r:
         try: await member.add_roles(r)
         except: pass
 
-    # INVITE TRACKER
     try:
         ni=await guild.invites(); nim={i.code:i.uses for i in ni}; inviter=None
         for code,ou in invite_cache.get(guild.id,{}).items():
@@ -1042,7 +1119,6 @@ async def on_member_join(member):
 #  COMMANDS
 # ══════════════════════════════════════════════════════════════
 
-# ── Moderation — Staff/Manager/Ownership ─────────────────────
 @bot.command()
 async def ban(ctx, member: discord.Member=None, *, reason="No reason"):
     if not has_staff_permissions(ctx.author): return await ctx.reply("❌ Δεν έχεις δικαίωμα.")
@@ -1075,7 +1151,6 @@ async def clearmessage(ctx, amount: int=None):
     await ctx.channel.purge(limit=amount+1)
     await ctx.send(f"🧹 Διαγράφηκαν **{amount}** μηνύματα.", delete_after=3)
 
-# ── Info — Staff/Manager/Ownership ───────────────────────────
 @bot.command()
 async def serverstatus(ctx):
     if not is_staff_or_manager(ctx.author): return await ctx.reply("❌ Δεν έχεις δικαίωμα.")
@@ -1089,16 +1164,46 @@ async def serverstatus(ctx):
     e.set_footer(text="Quantum Roleplay • Server Status")
     await ctx.reply(embed=e)
 
+# ── !invites — όλοι μπορούν να το χρησιμοποιήσουν (μόνο για τον εαυτό τους)
+#    Staff/Manager/Ownership μπορούν να δουν και άλλους ──────
 @bot.command()
 async def invites(ctx, member: discord.Member=None):
-    if not is_staff_or_manager(ctx.author): return await ctx.reply("❌ Δεν έχεις δικαίωμα.")
-    t=member or ctx.author; uid=str(t.id); d=invite_data.get(uid,{"total":0,"real":0,"left":0})
+    # Αν έχει περάσει άλλο user αλλά δεν είναι staff, το αγνοούμε
+    if member and member.id != ctx.author.id and not is_staff_or_manager(ctx.author):
+        return await ctx.reply("❌ Μπορείς να δεις μόνο τα δικά σου invites.")
+    t = member if (member and is_staff_or_manager(ctx.author)) else ctx.author
+    uid=str(t.id); d=invite_data.get(uid,{"total":0,"real":0,"left":0})
     e=discord.Embed(title=f"📨 Invites — {t.display_name}", color=discord.Color.blurple(), timestamp=discord.utils.utcnow())
     e.set_thumbnail(url=t.display_avatar.url)
     e.add_field(name="📊 Συνολικά", value=str(d.get("total",0)), inline=True)
     e.add_field(name="✅ Real",     value=str(d.get("real",0)),  inline=True)
     e.add_field(name="🚪 Έφυγαν",  value=str(d.get("left",0)),  inline=True)
     e.set_footer(text="Quantum Roleplay • Invite Log")
+    await ctx.reply(embed=e)
+
+# ── !addinvites — μόνο Founder, προσθέτει invites χειροκίνητα ──
+@bot.command()
+async def addinvites(ctx, member: discord.Member=None, amount: int=None):
+    if not is_founder(ctx.author):
+        return await ctx.reply("❌ Μόνο Founder.")
+    if not member or amount is None:
+        return await ctx.reply("Χρήση: `!addinvites @user <ποσότητα>`\nΜπορείς να βάλεις και αρνητικό αριθμό για να αφαιρέσεις.")
+    uid = str(member.id)
+    if uid not in invite_data or not isinstance(invite_data[uid], dict):
+        invite_data[uid] = {"total": 0, "real": 0, "left": 0}
+    invite_data[uid]["total"] = invite_data[uid].get("total", 0) + amount
+    invite_data[uid]["real"]  = max(0, invite_data[uid].get("total", 0) - invite_data[uid].get("left", 0))
+    save_invite_data(invite_data)
+    d = invite_data[uid]
+    sign = "+" if amount >= 0 else ""
+    e = discord.Embed(title="📨 Invites Updated", color=discord.Color.green(), timestamp=discord.utils.utcnow())
+    e.set_thumbnail(url=member.display_avatar.url)
+    e.add_field(name="👤 Χρήστης",   value=member.mention, inline=True)
+    e.add_field(name="📝 Αλλαγή",    value=f"`{sign}{amount}`", inline=True)
+    e.add_field(name="📊 Συνολικά",  value=str(d.get("total", 0)), inline=True)
+    e.add_field(name="✅ Real",       value=str(d.get("real", 0)),  inline=True)
+    e.add_field(name="🚪 Έφυγαν",    value=str(d.get("left", 0)),  inline=True)
+    e.set_footer(text=f"Quantum Roleplay • Founder Action | {ctx.author}")
     await ctx.reply(embed=e)
 
 @bot.command()
@@ -1173,7 +1278,6 @@ async def scan(ctx, member: discord.Member=None):
     e.set_footer(text=f"Quantum Roleplay • Scan | {guild.member_count} μέλη")
     await ctx.send(embed=e)
 
-# ── say / say2 — Ownership ───────────────────────────────────
 @bot.command()
 async def say(ctx, *, message: str):
     if not is_ownership(ctx.author): return await ctx.reply("❌ Μόνο Ownership.")
@@ -1192,7 +1296,6 @@ async def say2(ctx, *, message: str):
     try: await ctx.message.delete()
     except: pass
 
-# ── dmall — Founder only ──────────────────────────────────────
 @bot.command()
 async def dmall(ctx, *, message: str):
     if not is_founder(ctx.author): return await ctx.reply("❌ Μόνο Founder.")
@@ -1209,7 +1312,6 @@ async def dmall(ctx, *, message: str):
         except: failed+=1
     await ctx.reply(f"📨 Στάλθηκε σε **{sent}** μέλη. ❌ Απέτυχε σε **{failed}**.")
 
-# ── Security — Founder only ───────────────────────────────────
 @bot.command()
 async def setaltdays(ctx, days: int=None):
     if not is_founder(ctx.author): return await ctx.reply("❌ Μόνο Founder.")
@@ -1224,7 +1326,6 @@ async def togglealtban(ctx):
     ALT_AUTO_KICK=not ALT_AUTO_KICK
     await ctx.reply(f"Alt auto-kick: {'✅ **Ενεργό**' if ALT_AUTO_KICK else '❌ **Ανενεργό**'}")
 
-# ── lockapplication — Founder only ───────────────────────────
 @bot.command()
 async def lockapplication(ctx, app_type: str=None):
     if not is_founder(ctx.author): return await ctx.reply("❌ Μόνο Founder.")
@@ -1245,7 +1346,7 @@ async def lockapplication(ctx, app_type: str=None):
     e.set_footer(text=f"Από: {ctx.author}")
     await ctx.reply(embed=e)
 
-# ── Panels — Founder only ─────────────────────────────────────
+# ── Panels ────────────────────────────────────────────────────
 @bot.command()
 async def ticketpanel(ctx):
     if not is_founder(ctx.author): return await ctx.reply("❌ Μόνο Founder.")
@@ -1289,13 +1390,14 @@ async def applicationpanel(ctx):
 async def dutypanel(ctx):
     if not is_founder(ctx.author): return await ctx.reply("❌ Μόνο Founder.")
     e=discord.Embed(title="🟢 Staff Duty Panel",
-        description="Πάτα **On Duty** όταν ξεκινάς βάρδια και **Off Duty** όταν τελειώνεις.\n\n"
-                    "📋 **Duty Status** — Ποιοι είναι on duty τώρα\n"
-                    "🏆 **Leaderboard** — Συνολικές ώρες (δεν επαναφέρονται ποτέ)",
+        description=(
+            "Το duty μετράει αυτόματα όταν μπαίνεις στα **duty voice channels**.\n\n"
+            f"📋 **Status** — Ποιοι είναι on duty τώρα\n"
+            f"🏆 **Leaderboard** — Συνολικές ώρες (δεν επαναφέρονται ποτέ)"
+        ),
         color=discord.Color.green())
     await ctx.send(embed=e, view=DutyView()); await ctx.reply("Panel στάλθηκε.", delete_after=2)
 
-# ── !panel — Founder ──────────────────────────────────────────
 @bot.command()
 async def panel(ctx):
     if not is_founder(ctx.author): return await ctx.reply("❌ Μόνο Founder.")
@@ -1307,10 +1409,10 @@ async def panel(ctx):
     e.add_field(name="🔍 Security",     value="`!setaltdays <days>` `!togglealtban`", inline=False)
     e.add_field(name="📋 Applications", value="`!applicationpanel` `!lockapplication <type>`", inline=False)
     e.add_field(name="🎫 Panels",       value="`!ticketpanel` `!jobpanel` `!donatepanel` `!dutypanel`", inline=False)
+    e.add_field(name="📨 Invites",      value="`!addinvites @user <ποσότητα>`", inline=False)
     e.set_footer(text=f"Quantum Roleplay • Founder Panel | {ctx.author}")
     await ctx.reply(embed=e)
 
-# ── !panel2 — Ownership (Owner/Co-Owner/Founder) ──────────────
 @bot.command()
 async def panel2(ctx):
     if not is_ownership(ctx.author): return await ctx.reply("❌ Μόνο Ownership.")
@@ -1322,14 +1424,13 @@ async def panel2(ctx):
     e.set_footer(text=f"Quantum Roleplay • Ownership Panel | {ctx.author}")
     await ctx.reply(embed=e)
 
-# ── !panel3 — Staff/Manager ───────────────────────────────────
 @bot.command()
 async def panel3(ctx):
     if not is_staff_or_manager(ctx.author): return await ctx.reply("❌ Δεν έχεις δικαίωμα.")
     e=discord.Embed(title="📌 Quantum Roleplay — Staff Panel", color=discord.Color.blurple(), timestamp=discord.utils.utcnow())
     e.set_thumbnail(url=ctx.guild.icon.url if ctx.guild.icon else None)
     e.add_field(name="🛠 Moderation",  value="`!ban @user [λόγος]`\n`!kick @user [λόγος]`\n`!timeout @user <minutes> [λόγος]`\n`!clearmessage <amount>`", inline=False)
-    e.add_field(name="📊 Info",        value="`!serverstatus`\n`!invites [@user]`\n`!serverinvites`\n`!scan [@user]`", inline=False)
+    e.add_field(name="📊 Info",        value="`!serverstatus`\n`!invites`\n`!serverinvites`\n`!scan [@user]`", inline=False)
     e.set_footer(text=f"Quantum Roleplay • Staff Panel | {ctx.author}")
     await ctx.reply(embed=e)
 
@@ -1350,6 +1451,16 @@ async def on_ready():
             invite_cache[guild.id]={i.code:i.uses for i in invs}
             print(f"Loaded {len(invs)} invites.")
         except Exception as e: print(f"Invites error: {e}")
+        # Ανίχνευση αν υπάρχουν ήδη μέλη στα duty voice channels
+        for ch_id in DUTY_VOICE_CHANNELS:
+            ch = guild.get_channel(ch_id)
+            if ch:
+                for m in ch.members:
+                    if not m.bot:
+                        uid = str(m.id)
+                        if uid not in voice_duty_sessions:
+                            voice_duty_sessions[uid] = time.time()
+                            print(f"Resumed duty tracking for {m.name}")
     await bot.change_presence(activity=discord.Game(name="Quantum Roleplay"))
     print("Bot fully online!")
 
